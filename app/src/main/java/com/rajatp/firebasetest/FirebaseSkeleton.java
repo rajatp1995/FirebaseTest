@@ -41,7 +41,13 @@ public class FirebaseSkeleton extends AppCompatActivity {
         listenerChild = new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
+                dataSnapshot.getValue();
+                dataSnapshot.getChildrenCount();
+                dataSnapshot.getChildren();
+                dataSnapshot.child("").child("").getValue();
+                dataSnapshot.exists();
+                dataSnapshot.getKey();
+                dataSnapshot.getPriority();
             }
 
             @Override
